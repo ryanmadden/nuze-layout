@@ -1,11 +1,26 @@
-/* Feed styling */
+body {
+	background: #f7f7f7;
+}
+
+.navbar {
+	background-image: none;
+	background-color: #3d315b;
+	color: white;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
 .feed-wrapper {
 	max-width: 400px;
 	margin: auto;
+	border: 1px solid grey;
+	background-color: white;
 }
 
 .feed-item {
-	border: 1px solid black;
+	border-bottom: 1px solid grey;
 	overflow: auto;
 	padding: 5px;
 }
@@ -21,6 +36,7 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	color: #54ACEE;
 }
 
 .content-wrapper {
@@ -39,8 +55,49 @@
 	margin-bottom: 5px;
 }
 
+.enlarge-wrapper {
+	display: inherit;
+	width: auto;
+	position: fixed;
+	border: 1px solid grey;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.enlarge-wrapper > img{
+	max-width: 400px;
+	max-height: 400px;
+}
 
+@media(max-width:767px){
+	.fa-caret-right {
+		display: none;
+	}
+	.enlarge-wrapper {
+		display: none;
+	}
+}
+@media(min-width:768px){
+	.fa-caret-right {
+		position: fixed;
+		z-index: 10;
+		top: 45%;
+		left: 40%;
+	}
+	.enlarge-wrapper {
+		display: inherit;
+	}
+}
+@media(min-width:992px){
+	.fa-caret-right {
+		position: fixed;
+		z-index: 10;
+		top: 45%;
+		left: 32.2%;
+	}
+}
+@media(min-width:1200px){}
 
 
 
