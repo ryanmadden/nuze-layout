@@ -1,16 +1,43 @@
+/* Feed styling */
+.feed-wrapper {
+	max-width: 400px;
+	margin: auto;
+}
 
+.feed-item {
+	border: 1px solid black;
+	overflow: auto;
+	padding: 5px;
+}
+.logo-wrapper {
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.logo-wrapper .fa ::before, .logo-wrapper .fa {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+.content-wrapper {
+	width: 80%;
+	display: inline-block;
+	float: left;
+}
 
+.content-wrapper > img {
+	max-height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-
-
-
-
-
+.lead {
+	margin-bottom: 5px;
+}
 
 
 
